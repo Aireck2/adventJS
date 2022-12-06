@@ -1,0 +1,22 @@
+{
+  "name": "adventjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "nodemon ./challenges/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Aireck2/adventJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aireck2/adventJS/issues"
+  },
+  "homepage": "https://github.com/Aireck2/adventJS#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
