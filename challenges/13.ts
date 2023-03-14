@@ -9,10 +9,10 @@ const changes = [
 ] as [number, number][];
 
 function getFilesToBackup(lastBackup: number, changes: [number, number][]) {
-  const result: number[] = changes.reduce((prev: any, curr, i) => {
+  const result: number[] = changes.reduce((prev: any, curr) => {
     const isAfter = curr[1] > lastBackup;
     const isRepeated = prev.includes(curr[0]);
-    return prev.concat(isAfter && !isRepeated ? curr[0] : []);
+    return prev.concat(isAfter && !isRepeated ? curr[0] : []) as number[];
   }, []);
   return result.sort((a, b) => a - b);
 }

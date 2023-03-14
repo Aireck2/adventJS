@@ -13,12 +13,12 @@ function countTime(leds: LedType[]) {
     const indexes: number[] = leds.reduce(
       (prev: any, curr: any, i, arr: any) => {
         const canIgnite = (curr === 0 && arr[i - 1]) ?? arr.at(-1) === 1;
-        return prev.concat(canIgnite ? i : []);
+        return prev.concat(canIgnite ? i : []) as number[];
       },
       []
     );
 
-    indexes.forEach((val, i, arr) => (leds[val] = 1));
+    indexes.forEach((val) => (leds[val] = 1));
     times++;
   }
 
