@@ -21,5 +21,5 @@ function distributeGifts(packOfGifts: string[], reindeers: string[]) {
   return roundResult;
 }
 
-const g = distributeGifts(packOfGifts, reindeers); // 2
-console.log(g);
+const logDistributeGifts = distributeGifts(packOfGifts, reindeers); // 2
+console.log(logDistributeGifts);

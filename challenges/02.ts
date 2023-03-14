@@ -23,4 +23,6 @@ function countHours(year: number, holidays: string[]) {
   return count;
 }
 
-const hours = countHours(year, holidays);
+const logCountHours = countHours(year, holidays);
+
+console.log(logCountHours);

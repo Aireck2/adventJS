@@ -11,6 +11,6 @@ function wrapping(gifts: string[]) {
   return wrappedGifts;
 }
 
-const wrapped = wrapping(gifts);
+const logWrapping = wrapping(gifts);
 
-// console.log(wrapped);
+console.log(logWrapping);
